@@ -1,0 +1,10 @@
+streamlit
+google-generativeai
+huggingface_hub
+python-dotenv
+langchain
+langchain-google-genai
+langchain-community
+faiss-cpu
+numpy
+pillow
