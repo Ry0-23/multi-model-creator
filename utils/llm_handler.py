@@ -7,12 +7,12 @@ load_dotenv()
 
 def generate_hospitality_content(concept, style):
     # 1. Configure Gemini
-    api_key = os.getenv("zaSyCLRcp5rPUwA7VpzeJscaWpoV_4vqhQxSc")
+    api_key = os.getenv("GOOGLE_API_KEY")
     if not api_key:
         return "Error: GOOGLE_API_KEY not found in .env file.", ""
     
     genai.configure(api_key=api_key)
-    model_name = os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
+    model_name = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
     model = genai.GenerativeModel(model_name)
 
     # 2. Create the prompt for the Narrative
